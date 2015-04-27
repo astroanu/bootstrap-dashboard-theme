@@ -1,0 +1,13 @@
+/vendor
+/node_modules
+.env
+ftpconfig.js
+*.sublime-project
+*.sublime-workspace
+/resources/assets/vendor/
+/public/build/
+/public/css/
+/public/js/
+/public/fonts/
+/storage/assets/
+/storage/downloads/.vagrant

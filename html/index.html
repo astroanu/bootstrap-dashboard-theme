@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laravel</title>
+	<!--link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'-->
+	<link href="../bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="../css/styles.css" rel="stylesheet">
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<!--[if lt IE 8]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<![endif]-->
+	<script src="../bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="col-md-2 left-panel">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Dashbaord</a>
+			</div>
+			<ul class="nav pull-right">
+	  			<li role="presentation" class="dropdown">
+	    			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+					<i class="fa fa-bars"></i>  <span class="caret"></span>
+					</a>
+	    			<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Logout</a></li>
+						<li><a href="#">Some menu</a></li>
+	    			</ul>
+	  			</li>
+			</ul>
+		</nav>
+		<div class="dash-profile">
+			<a class="profile-link" href="">
+				<img src="../images/profile.jpg"> Jon Doe
+			</a>
+		</div>
+		<ul class="nav list-group">
+			<li>
+				<a class="list-group-item" href="#"><i class="fa fa-tachometer"></i> Dashboard</a>
+			</li>
+			<li>
+				<a class="list-group-item" href="#"><i class="fa fa-users"></i> Users</a>
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-10 col-md-offset-2 dash-panel">
+
+		<div>
+			<input class="form-control input-sm" placeholder="Search">
+		</div>
+
+		<div role="tabpanel" class="dash-tabs">
+		  <ul class="nav nav-tabs" role="tablist">
+		    <li role="presentation" class="active">
+		    	<a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    </li>
+		    <li role="presentation">
+		    	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    </li>
+		    <li role="presentation">
+		    	<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    </li>
+		    <li role="presentation">
+		    	<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    </li>
+		  </ul>
+
+		  <div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+		    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+		    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+		    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+		  </div>
+		</div>
+
+	</div>
+</body>
+</html>

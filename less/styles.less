@@ -1,0 +1,41 @@
+@import (reference) "bootstrap.less";
+
+@dash-base :@brand-primary;
+
+@dash-base-darker:            lighten(@dash-base, 13.5%); 
+@dash-base-dark:              lighten(@dash-base, 20%);  
+@dash-base-light:             lighten(@dash-base, 46.7%);
+@dash-base-lighter:           lighten(@dash-base, 93.5%); 
+
+body{padding: 0;}
+
+.left-panel{
+	padding: 0;position: fixed;height:100%;background-color: darken(@dash-base-darker, 40%);
+	.navbar-default{background-color: transparent;border: none;margin-bottom: 0;}
+	.dash-profile{
+		padding: 15px;background-color: @dash-base;
+		.profile-link{
+			line-height: 40px;color: @dash-base-lighter;
+			img{width: 40px;border-radius: 50%;float: left;margin-right: 15px;}
+		}
+	}
+	.nav.list-group{
+		li{
+			a {border:none;border-bottom: thin solid lighten(@dash-base-light,30%);  border-radius: 0;}
+		}
+	}
+}
+
+.dash-panel{
+	margin-top: 15px;
+	.dash-tabs{
+		text-align: center;
+		li{
+			float: none;display: inline-block;
+			a{
+				display: inline-block;border: none;
+				&:hover, &:focus{border: none;}
+			}
+		}
+	}
+}
