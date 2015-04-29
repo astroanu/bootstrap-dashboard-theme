@@ -7,21 +7,23 @@
 @dash-base-light:             lighten(@dash-base, 46.7%);
 @dash-base-lighter:           lighten(@dash-base, 93.5%); 
 
-body{padding: 0;}
+@dash-left-avatar-block-height: 40px;
+
+body{padding: 0;background-color: lighten(@gray-light, 50%);}
 
 .left-panel{
 	padding: 0;position: fixed;height:100%;background-color: darken(@dash-base-darker, 40%);
-	.navbar-default{background-color: transparent;border: none;margin-bottom: 0;}
+	.navbar-default{background-color: transparent;border: none;margin-bottom: 0;line-height: 30px;}
 	.dash-profile{
 		padding: 15px;background-color: @dash-base;
 		.profile-link{
-			line-height: 40px;color: @dash-base-lighter;
-			img{width: 40px;border-radius: 50%;float: left;margin-right: 15px;}
+			line-height: @dash-left-avatar-block-height;color: @dash-base-lighter;
+			img{width: @dash-left-avatar-block-height;border-radius: 50%;float: left;margin-right: 15px;}
 		}
 	}
 	.nav.list-group{
 		li{
-			a {border:none;border-bottom: thin solid lighten(@dash-base-light,30%);  border-radius: 0;}
+			a {border:none;border-bottom: thin solid @dash-base-light;  border-radius: 0;}
 		}
 	}
 }
@@ -29,13 +31,37 @@ body{padding: 0;}
 .dash-panel{
 	margin-top: 15px;
 	.dash-tabs{
-		text-align: center;
-		li{
-			float: none;display: inline-block;
+		text-align: center;  margin-top: 10px;background-color: #fff;
+		.nav-tabs li{
+			float: none;display: inline-block;  
 			a{
-				display: inline-block;border: none;
-				&:hover, &:focus{border: none;}
+				display: inline-block;border:none;border-bottom: thin solid @dash-base-light;padding: @dash-left-avatar-block-height /2 + 5 15px;
+				&:hover, &:focus{border:none;border-bottom:thin solid @dash-base-light;}
 			}
+			&.active a{border-bottom:thin solid @dash-base;}
+		}
+		.nav > li > a:hover, .nav > li > a:focus{background-color: transparent;}
+		.tab-content{
+			text-align: left;  margin-top: 15px;
+			h4{margin-top: 0;color: @gray-light}
+		}
+	}
+	.dash-top-bar{
+		margin: -15px -15px 15px -15px;  border-bottom: thin solid @gray-lighter;background-color: #fff;
+		.input-group{
+			.input-group-addon{border-radius: 0;}
+			input{  padding: @navbar-height/2 18px;}
+		}	
+		&.crumbs{
+			 margin: -10px -15px;padding: 5px;
+			h4{  margin: 5px;}
+		}	
+	}
+
+	.named-list{
+		li{
+			padding: 5px 0;
+			img{width: 35px;border-radius: 35px;  margin-right: 15px;}
 		}
 	}
 }

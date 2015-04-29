@@ -73,6 +73,7 @@
 }
 body {
   padding: 0;
+  background-color: #f7f7f7;
 }
 .left-panel {
   padding: 0;
@@ -84,6 +85,7 @@ body {
   background-color: transparent;
   border: none;
   margin-bottom: 0;
+  line-height: 30px;
 }
 .left-panel .dash-profile {
   padding: 15px;
@@ -101,7 +103,7 @@ body {
 }
 .left-panel .nav.list-group li a {
   border: none;
-  border-bottom: thin solid #ffffff;
+  border-bottom: thin solid #e2edf7;
   border-radius: 0;
 }
 .dash-panel {
@@ -109,16 +111,62 @@ body {
 }
 .dash-panel .dash-tabs {
   text-align: center;
+  margin-top: 10px;
+  background-color: #fff;
 }
-.dash-panel .dash-tabs li {
+.dash-panel .dash-tabs .nav-tabs li {
   float: none;
   display: inline-block;
 }
-.dash-panel .dash-tabs li a {
+.dash-panel .dash-tabs .nav-tabs li a {
   display: inline-block;
   border: none;
+  border-bottom: thin solid #e2edf7;
+  padding: 25px 15px;
 }
-.dash-panel .dash-tabs li a:hover,
-.dash-panel .dash-tabs li a:focus {
+.dash-panel .dash-tabs .nav-tabs li a:hover,
+.dash-panel .dash-tabs .nav-tabs li a:focus {
   border: none;
+  border-bottom: thin solid #e2edf7;
+}
+.dash-panel .dash-tabs .nav-tabs li.active a {
+  border-bottom: thin solid #337ab7;
+}
+.dash-panel .dash-tabs .nav > li > a:hover,
+.dash-panel .dash-tabs .nav > li > a:focus {
+  background-color: transparent;
+}
+.dash-panel .dash-tabs .tab-content {
+  text-align: left;
+  margin-top: 15px;
+}
+.dash-panel .dash-tabs .tab-content h4 {
+  margin-top: 0;
+  color: #777777;
+}
+.dash-panel .dash-top-bar {
+  margin: -15px -15px 15px -15px;
+  border-bottom: thin solid #eeeeee;
+  background-color: #fff;
+}
+.dash-panel .dash-top-bar .input-group .input-group-addon {
+  border-radius: 0;
+}
+.dash-panel .dash-top-bar .input-group input {
+  padding: 25px 18px;
+}
+.dash-panel .dash-top-bar.crumbs {
+  margin: -10px -15px;
+  padding: 5px;
+}
+.dash-panel .dash-top-bar.crumbs h4 {
+  margin: 5px;
+}
+.dash-panel .named-list li {
+  padding: 5px 0;
+}
+.dash-panel .named-list li img {
+  width: 35px;
+  border-radius: 35px;
+  margin-right: 15px;
 }

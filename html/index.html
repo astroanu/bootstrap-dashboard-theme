@@ -50,31 +50,62 @@
 	</div>
 	<div class="col-md-10 col-md-offset-2 dash-panel">
 
-		<div>
-			<input class="form-control input-sm" placeholder="Search">
+		<!--div class="row dash-top-bar">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+				<input class="form-control input-lg" placeholder="Search">
+			</div>
+		</div-->
+
+		<div class="row dash-top-bar crumbs">
+			<a href="#" class="btn btn-link pull-left"><i class="fa fa-chevron-left"></i> Back</a>
+			<a href="#" class="btn btn-link pull-right"><i class="fa fa-star"></i> Favorite</a>
+			<h4 class="text-center">Some title</h4>
 		</div>
 
-		<div role="tabpanel" class="dash-tabs">
+		<div role="tabpanel" class="row dash-tabs">
 		  <ul class="nav nav-tabs" role="tablist">
 		    <li role="presentation" class="active">
-		    	<a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    	<a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-users"></i> Users</a>
 		    </li>
 		    <li role="presentation">
-		    	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-bar-chart"></i> Charts</a>
 		    </li>
 		    <li role="presentation">
-		    	<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    	<a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-calendar"></i> Date and Time</a>
 		    </li>
 		    <li role="presentation">
-		    	<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-user"></i> User</a>
+		    	<a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-cloud"></i> Cloud</a>
 		    </li>
 		  </ul>
 
 		  <div class="tab-content">
-		    <div role="tabpanel" class="tab-pane active" id="home">...</div>
-		    <div role="tabpanel" class="tab-pane" id="profile">...</div>
-		    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-		    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+		    <div role="tabpanel" class="tab-pane active" id="home">
+		    	<div class="col-md-12">
+		    		<h4>Users</h4>
+		    		<ul class="list-unstyled named-list">
+						<li><a href="#"><img src="../images/profile.jpg">Rosemary	Stewart</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Emanuel	Jenkins</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Silvia	Morgan</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Gregg	Cook</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Lonnie	Bell</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Naomi	Schneider</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Jennifer	Burke</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Alberto	Hudson</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Adrian	Hamilton</a></li>
+						<li><a href="#"><img src="../images/profile.jpg">Emily	Patrick</a></li>
+			    	</ul>
+		    	</div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="profile">
+
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="messages">
+
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="settings">
+
+		    </div>
 		  </div>
 		</div>
 
